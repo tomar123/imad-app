@@ -8,6 +8,14 @@ element.innerHTML='New Value';
 
 var img=document.getElementById('madi');
 
+var marginRight = 0;
+function moveLeft() {
+  marginRight = marginRight + 10;
+  img.style.marginRight = marginRight + 'px';
+}
+
 img.onclick=function(){
-  img.style.marginRight='150px';  
+  
+  var interval = setInterval(moveLeft,50);
+  //img.style.marginRight='150px';  
 };
