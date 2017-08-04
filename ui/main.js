@@ -9,5 +9,5 @@ element.innerHTML='New Value';
 var img=document.getElementById('madi');
 
 img.onclick=function(){
-  img.style.marginright='150px';  
+  img.style.marginleft='150px';  
 };
