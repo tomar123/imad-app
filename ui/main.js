@@ -8,6 +8,6 @@ element.innerHTML='New Value';
 
 var img=document.getElementById('madi');
 
-madi.onclick=function(){
-  madi.style.marginright='150px';  
+img.onclick=function(){
+  img.style.marginright='150px';  
 };
