@@ -79,7 +79,7 @@ function createTemplate(data){
 
 
 var counter = 0;
-app.get('/container', function(req, res){
+app.get('/counter', function(req, res){
    counter = counter+1;
    res.send(counter.toString()); 
     
