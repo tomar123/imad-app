@@ -44,8 +44,11 @@ var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
     
-      //Capture the response and store it in a variable
-    request.onreadystatechange = function(){
+        //Create a request object
+        var request = new XMLHttpRequest();
+    
+        //Capture the response and store it in a variable
+        request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //Take Some Action
             if(request.status ===200){
