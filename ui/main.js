@@ -27,7 +27,6 @@ button.onclick=function(){
         //Not Done Yet
     };
     
-    
     //Make the request
     request.open('GET', 'http://deepaktomar2031.imad.hasura-app.io/counter', true);
     request.send(null);
@@ -60,7 +59,8 @@ img.onclick=function(){
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = documnet.getElementById('submit_btn');
-submit.onclick() = function() {
+
+submit.onclick = function() {
   //Make a request to the server and send the name
   
   //Capture a list of names and render it as a list
