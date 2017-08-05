@@ -9,8 +9,6 @@ var button=document.getElementById('counter');
 var counter = 0;
 
 
-
-
 button.onclick=function(){
     
     //Make a request to the counter endpoint
@@ -24,4 +22,26 @@ button.onclick=function(){
     span.innerHTML = counter.toString();
     
 };
+
+
+element.innerHTML='New Value';
+
+var img=document.getElementById('madi');
+
+var marginRight = 0;
+function moveLeft() {
+  marginRight = marginRight + 1;
+  img.style.marginRight = marginRight + 'px';
+}
+
+img.onclick=function(){
+  
+  var interval = setInterval(moveLeft,50);
+  //img.style.marginRight='150px';  
+};
+
+
+
+
+
 
