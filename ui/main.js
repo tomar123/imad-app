@@ -54,8 +54,10 @@ img.onclick=function(){
   //img.style.marginRight='150px';  
 };
 
-//submit button
 
+
+
+//submit button
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = documnet.getElementById('submit_btn');
