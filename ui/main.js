@@ -4,6 +4,10 @@ console.log('Loaded!');
 
 var element=document.getElementById('main-text');
 
+//counter code
+var button=document.getElementById('counter');
+var counter = 0;
+
 element.innerHTML='New Value';
 
 var img=document.getElementById('madi');
@@ -23,8 +27,7 @@ img.onclick=function(){
 
 
 
-var button=document.getElementById('counter');
-var counter = 0;
+
 
 button.onclick=function(){
     
