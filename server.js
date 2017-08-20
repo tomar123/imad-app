@@ -144,10 +144,8 @@ app.post('/create-user', function(req, res){
    });
 });
 
-
 app.post('/login', function(res, req)
 {
-    
    var username = req.body.username;
    var password = req.body.password;
    pool.query('SELECT * FROM "user" username = $1', [username], function (err, result)
@@ -167,7 +165,7 @@ app.post('/login', function(res, req)
                //Match the password
                var dbString = result.rows[0].password;
                var salt = dbString.split('$')[2];
-               var hashedPassword = hash(password, salt); //
+               var hashedPassword = hash(password, salt); // Creating a hash based on password submitted and original salt
                if (hashedPassword === dbString)
                {
                    res.send('Correct username and password ');
