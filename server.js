@@ -147,7 +147,7 @@ app.post('/create-user', function(req, res){
 
 
 
-/*
+
 app.post('/login', function(res, req)
 {
    var username = req.body.username;
@@ -183,7 +183,6 @@ app.post('/login', function(res, req)
    });
 });
 
-*/
 
 
 
