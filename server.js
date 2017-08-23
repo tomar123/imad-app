@@ -185,10 +185,6 @@ app.post('/login', function(req, res)
                    //set cookie with a session id
                    //internally, on the server side, it maps the session id to an object
                    //{ auth: {userId }}
-                   
-                   
-                   
-                   
                    res.send('Correct username and password ');
                }
                else
@@ -200,7 +196,7 @@ app.post('/login', function(req, res)
    });
 });
 
-app.get('check-login', function(req, res){
+app.get('/check-login', function(req, res){
    if(req.session && req.session.auth && req.session.auth.userId){
        res.send('you are logged in: ' + req.session.auth.userId.toString());
    } else {
