@@ -118,7 +118,7 @@ submit.onclick = function() {
     request.send(JSON.stringify({username: username, password: password}));
 };
 
-element.innerHTML='New Value';
+//element.innerHTML='New Value';
 
 var img=document.getElementById('madi');
 
