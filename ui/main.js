@@ -4,7 +4,7 @@ console.log('Loaded!');
 
 var element=document.getElementById('main-text');
 
-
+/*
 //counter code
 var button=document.getElementById('counter');
 //var counter = 0;
@@ -37,9 +37,10 @@ button.onclick=function(){
     //span.innerHTML = counter.toString();
     
 };
+*/
 
 
-
+/*
 //submit button
 
 var submit = document.getElementById('submit_btn');
@@ -75,9 +76,9 @@ submit.onclick = function() {
     request.open('GET', 'http://deepaktomar2031.imad.hasura-app.io/submit-name?name=' +name, true);
     request.send(null);
 };
+*/
 
 
-/*
 //submit username/password to login
 
 var submit = document.getElementById('submit_btn');
@@ -118,9 +119,9 @@ submit.onclick = function() {
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify({username: username, password: password}));
 };
-*/
 
-element.innerHTML='New Value';
+
+//element.innerHTML='New Value';
 
 var img=document.getElementById('madi');
 
